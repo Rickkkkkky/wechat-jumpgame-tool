@@ -39,7 +39,7 @@
 
 	Serving HTTP on localhost port 8013 ...
 
-然后通过浏览器（推荐使用 Chrome 浏览器）打开客户端，在地址栏输入
+然后通过浏览器（推荐使用 Chrome 浏览器）打开客户端，在地址栏输入：
 
 	localhost:8013
 
