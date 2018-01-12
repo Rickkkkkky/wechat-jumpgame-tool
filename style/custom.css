@@ -1,0 +1,327 @@
+html,
+body
+{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+body
+{
+    background-color: #333;
+}
+
+#sscvs,
+#ptcvs,
+#guidlinebox
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+#sscvs
+{
+    background-color: #2a2a2a;
+    background-image: url(../icons/heartbreak.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    z-index: 5;
+}
+#ptcvs
+{
+    z-index: 6;
+}
+#guidlinebox
+{
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    z-index: 7;
+}
+#hgl
+{
+    position: absolute;
+    left: 0;
+    top: -2px;
+    height: 1px;
+    width: 100%;
+    background-color: #999;
+}
+#vgl
+{
+    position: absolute;
+    top: 0;
+    left: -2px;
+    width: 1px;
+    height: 100%;
+    background-color: #999;
+}
+
+#left-sidebar
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 100%;
+    background-color: #1f1f1f;
+    color: #f6f6f6;
+    font-family: "Microsoft YaHei" sans-serif;
+    font-size: 13px;
+}
+
+#right-sidebar
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    background-color: #1f1f1f;
+    color: #f6f6f6;
+    font-family: "Microsoft YaHei" sans-serif;
+    font-size: 13px;
+}
+#right-sidebar div
+{
+    margin: 10px 20px;
+}
+
+#right-sidebar #logo
+{
+    margin: 10px auto;
+    width: 265px;
+    height: 106px;
+    background-image: url(../icons/logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#right-sidebar #tipsbox
+{
+    padding: 0 3px;
+    background-color: #228b70;
+    height: 20px;
+    transition: height 0.3s linear;
+    overflow: hidden;
+
+}
+#right-sidebar #tipsbox.tipsbox-hide
+{
+    height: 0;
+}
+#right-sidebar #tips
+{
+    font-size: 12px;
+    line-height: 20px;
+}
+#right-sidebar #cancelbtn
+{
+    float: right;
+    margin: 4px 5px;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-image: url(../icons/cancel.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    cursor: pointer;
+    opacity: 0.6;
+}
+#right-sidebar #cancelbtn:hover
+{
+    opacity: 0.9;
+}
+
+#right-sidebar .btn
+{
+    display: inline-block;
+    margin: 0;
+    width: 80px;
+    height: 25px;
+    background-color: #bd4337;
+    text-align: center;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    opacity: 0.6;
+}
+#right-sidebar .btn:hover
+{
+    opacity: 0.9;
+}
+#right-sidebar .btn span
+{
+    line-height: 25px
+}
+#right-sidebar .coord
+{
+    display: inline-block;
+    font-size: 12px;
+    color: #d6d6d6;
+    margin: 0 0 0 3px;
+    vertical-align: bottom;
+}
+
+#right-sidebar #configbtn
+{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    background-image: url(../icons/config.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    cursor: pointer;
+    opacity: 0.6;
+}
+#right-sidebar #configbtn:hover
+{
+    opacity: 0.9;
+}
+
+#loadingbox
+{
+    position: absolute; 
+    left: 50%; 
+    top: 50px;
+    transition: top 0.3s linear;
+    transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+    padding: 0 10px;
+    height: 32px;
+    background-color: #000;
+    border-radius: 5px;
+    opacity: 0.4;
+    z-index: 21;
+}
+#loadingbox.loading-hide
+{
+    top: -32px;
+}
+#loadingimg
+{
+    vertical-align: middle;
+}
+#loadingspan
+{
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    line-height: 32px;
+}
+
+/* Config Window */
+.configwin
+{
+    z-index: 11;
+}
+.configwin .spwin-body
+{
+    color: #f6f6f6;
+    font-family: "Microsoft YaHei" sans-serif;
+    font-size: 13px;
+}
+.timepxbox
+{
+    margin: 10px 20px;
+}
+.timepxbox label
+{
+    font-size: 14px;
+}
+.timepxbox input
+{
+    padding-left: 5px;
+    margin: 0 6px;
+    width: 50px;
+    outline: none;
+    vertical-align: top;
+}
+.resolutionbox
+{
+    margin: 10px 20px;
+}
+.resolutionbox label
+{
+    font-size: 14px;
+}
+.autobox
+{
+    margin: 10px 20px;
+}
+.autobox input
+{
+    margin: 0 5px 0 0;
+    outline: none;
+    vertical-align: text-bottom;
+}
+.autobox label
+{
+    font-size: 14px;
+}
+.autobox label span
+{
+    font-size: 12px;
+    color: #c6c6c6;
+}
+.initbox
+{
+    margin: 10px 20px;
+}
+.initbox p {
+    margin: 5px 0 0 0;
+    font-size: 12px;
+    color: #c6c6c6;
+}
+.initbox .initbtn
+{
+    margin: 0;
+    padding: 3px 5px;
+    width: 80px;
+    background-color: #444;
+    border-radius: 3px;
+    cursor: pointer;
+    text-align: center;
+    opacity: 0.6;
+}
+.initbox .initbtn:hover
+{
+    opacity: 0.9;
+}
+.okbtn
+{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    padding: 2px 4px;
+    background-color: #c13a33;
+    border-radius: 3px;
+    cursor: pointer;
+    opacity: 0.6;
+}
+.okbtn:hover
+{
+    opacity: 0.9;
+}
+.okbtn span
+{
+    vertical-align: middle;
+}

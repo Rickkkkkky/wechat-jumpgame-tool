@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Jump Jump!</title>
+    <link rel="stylesheet" type="text/css" href="/style/simplewindow.css">
+    <link rel="stylesheet" type="text/css" href="/style/custom.css">
+    <script type="text/javascript" src="http://localhost:8013/socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="/script/SimpleWindow.js"></script>
+    <script type="text/javascript" src="/script/createConfigWindow.js"></script>
+</head>
+<body>
+    <canvas id="sscvs" width='0' height='0'>Canvas not supported.</canvas>
+    <canvas id="ptcvs" width='0' height='0'>Canvas not supported.</canvas>
+    <div id="guidlinebox">
+        <div id="hgl"></div>
+        <div id="vgl"></div>
+    </div>
+
+    <!--<div id="left-sidebar"></div>-->
+
+    <div id="right-sidebar">
+        <div id="logo"></div>
+        <div id="tipsbox" class="tipsbox-hide">
+            <span id="tips"></span>
+            <div id="cancelbtn"></div>
+        </div>
+        <div id="screencapbox">
+            <div id="screencapbtn" class="btn"><span>获取截图</span></div>
+        </div>
+        <div id="startptbox">
+            <div id="startptbtn" class="btn"><span>选择起点</span></div>
+            <p id="startptcoord" class="coord">起点坐标：(xxx, xxx)</p>
+        </div>
+        <div id="endptbox">
+            <div id="endptbtn" class="btn"><span>选择落点</span></div>
+            <p id="endptcoord" class="coord">落点坐标：(xxx, xxx)</p>
+        </div>
+        <div id="jumpbox">
+            <div id="jumpbtn" class="btn"><span>开始起跳</span></div>
+        </div>
+        <div id="configbtn"></div>
+    </div>
+
+    <div id="loadingbox">
+        <img id="loadingimg" src="/icons/loading.gif" width="28" height="21">
+        <span id="loadingspan">加载中...</span>
+    </div>
+
+    </div>
+
+    <div id="configwin"></div>
+
+    <script type="text/javascript" src="/script/init.js"></script>
+</body>
+</html>

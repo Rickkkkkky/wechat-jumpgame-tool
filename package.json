@@ -1,0 +1,15 @@
+{
+  "name": "jumphack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "run-server": "node server"
+  },
+  "author": "ricky",
+  "license": "ISC",
+  "dependencies": {
+    "imageinfo": "^1.0.4",
+    "socket.io": "^2.0.4"
+  }
+}

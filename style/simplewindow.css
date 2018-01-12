@@ -1,0 +1,47 @@
+.spwin-wrap
+{
+    position: absolute;
+    font-family: "Microsoft YaHei";
+    overflow: hidden;
+    opacity: 0.95;
+    border-radius: 5px 5px 0 0;
+}
+
+.spwin-header
+{
+    box-sizing: border-box;
+    padding: 0 8px;
+    width: 100%;
+    background-color: #060606;
+    border-radius: 5px 5px 0 0;
+}
+.spwin-title
+{
+    font-size: 15px;
+    font-weight: bold;
+    color: #efefef;
+}
+.spwin-closebtn
+{
+    position: absolute;
+    right: 8px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-image: url(../icons/close.png);
+    cursor: pointer;
+    opacity: 0.3;
+}
+.spwin-closebtn:hover
+{
+
+    opacity: 0.9;
+}
+
+.spwin-body
+{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-color: #101010;
+}
